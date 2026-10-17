@@ -1,0 +1,251 @@
+.hidden{
+    display: none;
+}
+body{
+                    
+    justify-content: center;     
+    align-items: center;         
+    height: 100vh;               
+    margin: 0; 
+    flex-wrap: wrap;
+    width:auto;
+}
+.but{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate:  -50% -50%;
+    width: 90px;
+    height: 40px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    border: none;
+    z-index: 0;
+    
+}
+.but::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    inset: -50%;
+    height: 110px;
+    width: 110px;
+    background: conic-gradient(from 0deg, transparent 0%, blue 100%, transparent 10%);
+    animation: spin 3s linear infinite;
+    z-index: -1;
+    translate: 30% -10%;
+}
+.but::after{
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background-color: rgb(238, 232, 232);
+    border-radius: 14px;
+    z-index: -1;
+    
+}
+@keyframes spin {
+    to{
+        transform: rotate(360deg);
+    }
+}
+h3{color: aqua;}
+.but:hover{
+    background-color: aqua;
+    box-shadow: 0px 0px 10px skyblue;
+}
+.well{
+    padding:50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 92%;
+    margin-top: -20px;
+    font-size: 30px;
+}
+.ima{
+  background-image: url("me.png");
+  background-size: cover;
+    position:fixed;
+    top:50%;
+    left:50%;
+    translate: -50% -50%;
+    height: 120px;
+    width: 120px;
+    border-radius: 100px;
+
+}
+ .ol1{
+    display: flex;
+    list-style: none;
+    position: fixed;
+    right: 0;
+    top: 1%;
+    translate: -10% 0%;
+    gap: 20px;
+    padding: 10px;
+    border: 1px solid rgb(247, 240, 225);
+    border-radius: 40px;
+ }
+ .ol1{
+    background-color:floralwhite;
+    cursor: pointer;
+    font-size: 20px;
+ }
+ .ol1 li{
+    padding: 5px;
+    border-radius: 19px;
+    transition: all 0.5s ease;
+ }
+ .ol1 li:hover{
+    transform: scale(1.1);
+    background-color: skyblue;
+    border:1px solid rgb(111, 201, 237)
+
+ }
+.btn{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+}
+ .btn {
+  font-size: 20px;
+  padding: 15px 30px;
+  color: white;
+  background: linear-gradient(90deg, #ff6347, #ffd700, #32cd32);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  background-size: 200% auto;
+  animation: shine 2s linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+
+.s{
+    display: block;
+    width: 100%;
+    padding:20px;
+    color:black;
+    font-family: 'Arial', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+  
+.product{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+  .item{
+    background-color:whitesmoke;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+  .item:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+.product1{
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 20px;             
+    scroll-behavior: smooth;
+    height: 300px;
+    width: 100%;
+
+  }
+  .item1,.item2{
+    background-color:whitesmoke;
+    border: 0px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 190px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+  }
+  .item1,.item2{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .item1:hover,.item2:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+  }
+  .item1 p,.item2 p{
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+      /*images of movies */
+      .item2:nth-child(1){background-image: url("loki.jpeg");}
+      .item2:nth-child(2){background-image: url("spider");}
+      .item2:nth-child(3){background-image: url("thor.jpeg");}
+      .item2:nth-child(4){background-image: url("ghula.jpeg");}  
+      .item2:nth-child(5){background-image: url("doctor.jpeg");}
+      .item2:nth-child(6){background-image: url("ironman.jpeg");}
+      .item2:nth-child(7){background-image: url("loki.jpeg");}
+      .item2:nth-child(8){background-image: url("loki.jpeg");} 
+.it{
+    background-color: #c32a2a;
+    color: #21944f;
+    border:0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .it:hover{
+    background-color: #4e3232;
+  }
+
+.shine-text {
+    position: fixed;
+    top:20%;
+    left: 0;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(
+     to right,
+      #ff0000,
+     #ffff00,
+      #00ff00,
+      #00ffff,
+     #0000ff,
+      #ff00ff,
+      #ff0000
+  );
+  background-size: 100% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.aa{
+  height: 250px;
+
+}
