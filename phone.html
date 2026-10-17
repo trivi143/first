@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="info.css"><style>
+
+         
+.hidden {
+            display: none;
+        }
+
+section{
+        height: 100vh;
+        width: auto;
+        border: 1px solid black;
+        border-radius: 16px;
+        margin-top: 5px;
+        overflow:auto;
+}
+
+h1{
+        background-image: url("Battleground_Mobile_India.webp");
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+
+}
+ 
+body{
+        display: flex;               
+        justify-content: center;     
+        align-items: center;         
+        height: 100vh;               
+        margin: 0; 
+        flex-wrap: wrap;
+        width:auto;
+         
+}
+
+button{
+        border: none;
+}
+
+.ga{
+         
+        font-size: 16px;
+        cursor: pointer; 
+        color: #5e4242;
+        background-color: aliceblue;
+        border-radius: 16px;
+        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.ga:hover{
+        padding: 5px 5px;
+        color: white;
+        background-color: greenyellow;
+        box-shadow: 0 4px 15px rgba(100, 216, 245, 0.4);
+}
+.s{
+        height: 100vh;
+        width: auto;
+        display: inline;
+        position: relative;
+        top: 10px;
+        right: 20px;
+}
+.s button{
+        
+
+        border: 0.5px;
+        border-radius: 40px;
+        height: 29px;
+        width: auto;
+        color: black;
+        background-color: aliceblue;
+        margin-left: 10px;
+        margin-top: 15px;
+
+}
+.s button:hover{
+        padding: 5px 5px;
+        color: white;
+        background-color: #63df4d;
+        box-shadow: 0 4px 15px rgb(113, 194, 244);
+}
+
+form{
+         
+        width: auto;
+        height:auto;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+form:hover{
+        box-shadow: 7px 12px 25px rgb(105, 171, 230);       
+}
+
+.fr button{
+        float:right;
+        color: black;
+}
+
+.fr button:hover{
+        background-color: #63df4d;
+        padding:2px 4px;
+        color: white;
+
+}
+
+.fr input[type="text"], .fr input[type="email"], .fr input[type="tel"] , .fr input[type="password"]{
+        border: 1px;
+        width: 90%;
+        height: 37px;
+        border-radius: 25px;
+        background-color: #75f85d;
+        text-align: center;
+        font-size: 20px;
+        color: rgb(235, 235, 56);
+        margin-left: 5%;
+}
+
+.fr input[type="text"]:hover, .fr input[type="email"]:hover, .fr input[type="tel"]:hover, .fr input[type="password"]:hover{
+        box-shadow: 7px 12px 25px rgb(85, 60, 60);
+        background-color: #9ded8f;
+}
+
+.fr label{
+        font-size: 25px;
+        color: rgb(29 28 28 / 50%);
+        text-shadow: 0 0 5px rgba(232, 87, 58, 0.5);
+        border-radius: 9px;
+        margin: 200px
+}
+
+.fr p,.frr p{
+        cursor: pointer;
+        
+}
+
+.fr input[type="submit"] {
+         
+        font-size: 25px;
+        cursor: pointer;
+        color: #5e4242;
+        background-color: aliceblue;
+        border: 1px;
+        border-radius: 16px;
+        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        width:60%;
+        height:55px;
+        justify-content: center;
+}
+
+.fr input[type="submit"]:hover{
+        color: white;
+        background-color: greenyellow;
+        position: relative;
+}
+
+.frr input[type="text"], .frr input[type="email"], .frr input[type="tel"] , .frr input[type="password"]{
+        border: 1px;
+        width: 90%;
+        height: 37px;
+        border-radius: 25px;
+        background-color: #75f85d;
+        text-align: center;
+        font-size: 20px;
+        color: rgb(235, 235, 56);
+        margin-left: 5%;
+}
+
+.frr input[type="text"]:hover, .frr input[type="email"]:hover, .frr input[type="tel"]:hover, .frr input[type="password"]:hover{
+        box-shadow: 7px 12px 25px rgb(85, 60, 60);
+        background-color: #9ded8f;
+}
+
+.frr input[type="submit"] , .frr input[type="reset"]{
+         margin-left: 40px;
+        font-size: 25px;
+        cursor: pointer;
+        color: #5e4242;
+        background-color: aliceblue;
+        border: 1px;
+        border-radius: 16px;
+        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        
+} 
+
+ .frr input[type="submit"]:hover, .frr input[type="reset"]:hover{ 
+        color: white;
+        background-color: greenyellow;
+        position: relative;
+}
+
+.frr button{
+        float: right;
+        color: black;
+}
+.frr button:hover{
+        padding: 2px 4px;
+        background-color: #63df4d;
+        color: white;
+}
+<!--account information styles -->
+.a h2{
+        color: red;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: xx-large;
+        font-style: italic;
+        position: relative;
+        display: contents;
+        text-align: center;
+        border-radius: 20px;
+
+}
+.a li{
+        border: 1px solid green;
+        border-radius: 5px;
+        background-color: #63df4d;
+}
+.b{
+        background-color:none;
+        border-radius: 10px;
+        position: fixed;
+        top: 20px;
+        right: 0px;
+        margin-top: -10px;
+        width:auto;
+}
+.b{
+       display: flex;
+       gap: 18px;
+       list-style: none;
+       padding:10px;
+       margin-left: auto;
+       width: fit-content;
+       background-color: red;
+       border-radius: 10px;
+        
+    }
+
+
+ 
+h3{
+        color: rgb(227, 51, 51);
+        font-style:italic;
+        text-decoration: underline;
+    }
+ol{
+         
+         
+    }
+.info{
+        height: 100vh;
+        background-color: #99fb88;
+        font-size: 10px;
+        font-family: Arial;
+        font-style: italic;
+}
+.pi{    
+        
+}
+aside{
+        float: left;
+        width: 68%;
+        border-right:1px solid #5e4242;
+}
+main{
+        float: right;
+        width: 30%;
+        border: 1px solid #5e4242;
+}
+.im{
+        height:auto;
+        
+}
+img{
+        width: 100%;
+        height: auto;
+}
+
+
+ol{
+        font-size: 20px;
+        margin-left: -10px;
+        color: rgb(23, 22, 22);
+}
+.game{
+        background-color: #99fb88;
+}
+.matches{
+        background-color: #99fb88;
+}
+.settings{
+        
+        background-color: #99fb88;        
+}
+.set button{
+        display: block;
+        position: relative;
+        top: 80%;
+        left: 90%;
+        font-size: 16px;
+        cursor: pointer;
+        color: #5e4242;
+        background-color: aliceblue;
+        border-radius: 16px;
+        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        margin: 6px;
+     
+}
+.set button:hover{
+        padding: 9px 18px;
+        color: white;
+        background-color: greenyellow;
+}
+.set{
+        display: inline;
+        
+}
+    </style>
+</head>
+<body>
+    <div id="game" >   <!-- entry   -->
+        <h1>BGMI</h1>
+        <button onclick="bgmi1()" class="ga"> click me</button>
+    </div>
+    <header id="login" class="hidden">   <!-- login  -->
+        <div class="s">
+             <button type="button" onclick="handlelogin(event)">login</button>
+             <button type="button" onclick="handlesignup(event)">signup</button>
+        </div>
+        <br><div>
+        <form   class="fr" id="loginForm" >
+            <button type="button">X</button><br><br>
+            <input type="text" id ="loginEmail" required placeholder="userid or email or phone number">
+            <br><br>
+            <input type="password" id="loginPassword" name="password" required placeholder="password">
+            <br><br>
+            <input type="checkbox" id="agree" required > agrey about all  
+            <a><p>forgot password</p></a>
+            <br>
+            <input type="submit" value="Submit" onclick="handleLogin(event)">
+            <br><br>
+            <a><p>sign up</p></a><br>
+        </form><br><br><br>
+        <form  id="signupForm"  class="frr">
+            <button type="button">X</button>
+            <!--<label for="username">Username:</label>-->
+            <br>
+            <input type="text" id="signupusername" name="username" required placeholder="sun,name">
+            <br>
+            <!--<label for="email">Email:</label>-->
+            <br>
+            <input type="email" id="signupemail" name="email" required placeholder="enter email id">
+            <br>
+            <!-- <label for="phone">Phone:</label> -->
+            <br>
+            <input type="tel" id="signupphone" name="phone" required placeholder="enter phone number">
+            <br><br>
+            <input type="password" id="signuppassword" required placeholder="pass">
+            <br><br>
+            <input type="password" id="signuprepassword"required placeholder="repass">
+            <br><br>
+            <input type="reset" required>
+            <input type="submit" value="signup" onclick="handleSignup(event)">
+            <br><br>
+            <a><p>login</p></a><br>
+        </form>
+        <br><br><br><br></div>
+    </header>
+    <div id="connection" class="hidden">  
+        <div> <!-- game information   -->
+        <div class="a">
+            <h2>online game senter</h2>
+        </div>
+        <div >
+            <ul class="b">
+                <li><a href="#INFO">INFO</a></li>
+                <li><a href="#GAME">GAME</a></li>
+                <li><a href="#MATCHES">MATCHES</a></li>
+                <li><a href="#SETTINGS">SETTINGS</a></li>
+            </ul>
+        </div>
+    
+        <section id="INFO" class="info">     <!-- info   -->
+            <h1>Battlegrounds Mobile India</h1>
+            <div class="pi">
+                <p>Battlegrounds Mobile India (BGMI) is a free-to-play battle royale multiplayer game developed and published by Krafton, designed specifically for players in India. Essentially, it is the Indian version of PUBG Mobile.</p>
+                <aside class="info1"> 
+                    <h3>Gameplay Core</h3>
+                        <ol>
+                            <li>The Premise: Up to 100 players parachute onto a remote island. Players must locate and scavenge their own weapons, armor, and supplies while eliminating opponents</li>
+                            <li>The Blue Zone: The playable area of the map decreases in size over time, forcing surviving players into tighter encounters. The last standing individual or squad wins the match (the iconic "Chicken Dinner").</li>
+                            <li>Maps Available: The game features diverse terrains including classic maps like Erangel, Miramar, Sanhok, Vikendi, Livik, Karakin, and Nusa.</li>
+                        </ol>
+                </aside>
+                <main class="im">
+                    <img src="Battleground_Mobile_India.webp" alt="BGMI Logo">
+                </main>
+            </div>
+        </section>
+        <section id="GAME" class="game">            <!-- game   -->
+            <p>GAME</p>
+        </section>
+        <section id="MATCHES" class="matches">       <!-- matches   -->
+            <p>MATCHES</p>
+        </section>
+        <section id="SETTINGS" class="settings">       <!-- settings hhwiubwlwvjwk -->
+            <p>SETTINGS</p>
+            <div class="set">
+                <button class="button">login</button>
+                <button class="button">logout</button>
+            </div>
+        </section>
+        
+    </div>
+    </div>
+    
+    <script>
+<!--app to login form-->
+        function bgmi1(){
+            document.getElementById("game").classList.add("hidden");
+            document.getElementById("login").classList.remove("hidden");
+
+        }
+<!--login and signup buttons -->
+        function handlelogin(event){
+             event.preventDefault();
+           // document.getElementById("loginForm").style.display="block";
+           // document.getElementById("signupForm").style.display="none";
+
+            document.getElementById("loginForm").classList.add("hidden");
+            document.getElementById("signupForm").classList.remove("hidden");
+        }
+        function handlesignup(event){
+             event.preventDefault();
+           // document.getElementById("signupForm").style.display="block";
+            //document.getElementById("loginForm").style.display="none";
+
+            document.getElementById("signupForm").classList.add("hidden");
+            document.getElementById("loginForm").classList.remove("hidden");
+        }
+<!-- sign form -->
+        function handleSignup(event) {
+            event.preventDefault();
+
+            const username = document.getElementById("signupusername").value.trim();
+            const email = document.getElementById("signupemail").value.trim();
+            const phone = document.getElementById("signupphone").value.trim();
+            const pass = document.getElementById("signuppassword").value.trim();
+            const repass = document.getElementById("signuprepassword").value.trim();
+
+            if (username === "" || email === "" || phone === "" || pass === "" || repass === "") {
+                alert("Please fill all fields!");
+                return;
+            }
+
+            if(phone.length == 10 && !isNaN(phone)){
+             
+            } else {
+                alert("Please enter a valid 10-digit phone number!");
+                return;  
+            }
+
+            if (pass !== repass) {
+                alert("Passwords do not match!");
+                return;
+            }
+            alert(" successfully sign up")
+        }
+<!-- login Form-->
+        function handleLogin(event) {
+            event.preventDefault();
+
+            const email = document.getElementById("loginEmail").value.trim();
+            const password = document.getElementById("loginPassword").value.trim();
+            const agree = document.getElementById("agree").checked;
+
+            if (email === "" || password === "") {
+                alert("Please fill all fields!");
+                return;
+            }
+
+            if (!agree) {
+                alert("Please agree to all terms!");
+                return;
+            }
+            alert("wellcom to bgmi word")
+<!-- account information entry-->
+            document.getElementById("login").classList.add("hidden");
+            document.getElementById("connection").classList.remove("hidden");
+        }
+    </script>
+
+</body>
+</html>
